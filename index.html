@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Intro (Pantalla de carga) -->
+    <div class="intro">
+        <img src="image/intro.png" alt="clarkode logo">
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <img src="image/logo.png" alt="clarkode logo" class="logo">
+        <nav class="nav">
+            <ul>
+                <li>
+                    <a href="#inicio" class="scroll-to-top">
+                        <img src="image/home.png" class="nav-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.google.com" target="_blank">
+                        <img src="image/git.png" class="nav-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="hv.pdf" download>
+                        <img src="image/pdf.png" class="nav-icon">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Sección principal (100vh) -->
+    <section id="inicio" class="fullscreen-section">
+        <div class="content">
+            <!-- Video de fondo -->
+            <video autoplay muted loop class="background-video">
+                <source src="movie/video.mp4" type="video/mp4">
+            </video>
+            <div class="imagen-intro">
+                <img src="image/pfondo.png" class="nav-icon">
+            </div>
+            <div class="dialog-box">
+                <h2 id="animated-text"></h2>
+            </div>
+        </div>
+    </section>
+    <!-- Sección del carrusel -->
+    <section class="scroll-section">
+        <div class="section-content">
+            <!-- Texto descriptivo -->
+            <h2>Todas las herramientas que manejo</h2>
+            <p class="description">
+                Como desarrollador de software, manejo una amplia variedad de <br> lenguajes de programación enfocados
+                en
+                desarrollo web y backend,<br> así como bases de datos y sistemas operativos <br>especializados en
+                ciberseguridad.
+            </p>
+            <!-- Video del carrusel -->
+            <div class="video-container">
+                <video autoplay muted loop class="carrusel-video">
+                    <source src="movie/carrusel.mp4" type="video/mp4">
+                    Tu navegador no soporta videos HTML5.
+                </video>
+            </div>
+        </div>
+    </section>
+    <!-- Sección de Blog -->
+    <section class="blog-section">
+        <div class="blog-container">
+            <h2 class="blog-title">Proyectos desarrollados</h2>
+
+            <div class="blog-grid">
+                <!-- Artículo 1 -->
+                <article class="blog-card" id="blog1">
+                    <div class="card-image">
+                        <img src="image/P1v.png" alt="Kali 2025 Release">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">TelmApp | Sistema de Telemetría Apícola</h3>
+                        <p class="card-description">Un sistema de monitoreo Apícola con app para el cliente y vista en
+                            tiempo real de la temperatura y Humedad de cada Colmena.<br>De Hadware se uso DHT11, Modulo
+                            ESP32.<br>De Software se uso Firebase para la base de datos, Kotlin para el app y Arduino
+                            (ESP32)</p>
+                        <div class="card-date">20 Noviembre 2020</div>
+                    </div>
+                </article>
+
+                <!-- Artículo 2 -->
+                <article class="blog-card" id="blog2">
+                    <div class="card-image">
+                        <img src="image/P2v.png" alt="Modern WSL">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">VP4X.py | Sistema de Protección y Contraataque Cibernético</h3>
+                        <p class="card-description">Un software de ciberseguridad que detecta y responde en tiempo real
+                            a ataques informáticos, bloqueando amenazas y registrando eventos
+                            sospechosos.<br>Tecnologías utilizadas:
+                            <br>Python para la lógica del sistema.
+                            <br>Scapy y PyShark para análisis de red.
+                            <br>SQLite para almacenamiento de logs.
+                            <br>IPTables y Fail2Ban para mitigación de ataques.
+                        </p>
+                        <div class="card-date">06 Junio 2023</div>
+                    </div>
+                </article>
+
+                <!-- Artículo 3 -->
+                <article class="blog-card" id="blog3">
+                    <div class="card-image">
+                        <img src="image/P3v.png" alt="2024 Release">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Nitro Client | Contador Virtual con IA</h3>
+                        <p class="card-description">Un sitio web que automatiza la contabilidad, permitiendo a los
+                            usuarios subir sus registros y obtener reportes financieros con inteligencia
+                            artificial.<br>Tecnologías utilizadas:
+                            <br>Django (Python) para el backend.
+                            <br>SQLite3 para la base de datos.
+                            <br>HTML, CSS y JavaScript para la interfaz.
+                            <br>IA integrada para análisis contable automatizado.
+                        </p>
+                        <div class="card-date">12 Octubre 2024</div>
+                    </div>
+                </article>
+
+                <!-- Artículo 4 -->
+                <article class="blog-card" id="blog4">
+                    <div class="card-image">
+                        <img src="image/P4v.png" alt="Contributing">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">CM Client | Launcher Optimizado para BedWars</h3>
+                        <p class="card-description">Un launcher personalizado para Minecraft Java, diseñado para mejorar
+                            el rendimiento y la experiencia en partidas de BedWars con optimización
+                            avanzada.<br>Tecnologías utilizadas:
+                            <br>Java y LWJGL para el desarrollo del cliente.
+                            <br>OptiFine y Sodium para mejorar FPS.
+                            <br>FastPackets para reducir la latencia en servidores.
+                            <br>Interfaz UI personalizada con JavaFX.
+                        </p>
+                        <div class="card-date">25 Enero 2025</div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="footer-content">
+            <!-- Logo izquierdo -->
+            <div class="footer-logo">
+                <img src="image/logo.png" alt="Logo P4X" class="logo-img">
+            </div>
+
+            <!-- Texto central -->
+            <div class="footer-center">
+                <span class="signature">Hecho por P4X</span>
+            </div>
+
+            <!-- Derechos reservados -->
+            <div class="footer-right">
+                <p class="copyright">© 2024 CS. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
